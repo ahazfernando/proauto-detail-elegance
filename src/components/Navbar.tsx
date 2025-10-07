@@ -33,7 +33,7 @@ const Navbar = () => {
               Services
             </Link>
             <a href="/#gallery" className="font-medium hover:text-accent transition-colors">Gallery</a>
-            <a href="/#testimonials" className="font-medium hover:text-accent transition-colors">Testimonials</a>
+            <a href="/#about" className="font-medium hover:text-accent transition-colors">About</a>
             <Link 
               to="/contact" 
               className={`font-medium hover:text-accent transition-colors ${isActive('/contact') ? 'text-accent' : ''}`}
@@ -82,11 +82,11 @@ const Navbar = () => {
               Gallery
             </a>
             <a 
-              href="/#testimonials" 
+              href="/#about" 
               className="block font-medium hover:text-accent transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              Testimonials
+              About
             </a>
             <Link 
               to="/contact" 
