@@ -35,8 +35,18 @@ const Navbar = () => {
             >
               Services
             </Link>
-            <a href="/#gallery" className="font-medium hover:text-accent transition-colors">Gallery</a>
-            <a href="/#testimonials" className="font-medium hover:text-accent transition-colors">Testimonials</a>
+            <Link 
+              to="/gallery" 
+              className={`font-medium hover:text-accent transition-colors ${isActive('/gallery') ? 'text-accent' : ''}`}
+            >
+              Gallery
+            </Link>
+            <Link 
+              to="/about" 
+              className={`font-medium hover:text-accent transition-colors ${isActive('/about') ? 'text-accent' : ''}`}
+            >
+              About
+            </Link>
             <Link 
               href="/contact" 
               className={`font-medium hover:text-accent transition-colors ${isActive('/contact') ? 'text-accent' : ''}`}
@@ -77,20 +87,20 @@ const Navbar = () => {
             >
               Services
             </Link>
-            <a 
-              href="/#gallery" 
-              className="block font-medium hover:text-accent transition-colors"
+            <Link 
+              to="/gallery" 
+              className={`block font-medium hover:text-accent transition-colors ${isActive('/gallery') ? 'text-accent' : ''}`}
               onClick={() => setIsOpen(false)}
             >
               Gallery
-            </a>
-            <a 
-              href="/#testimonials" 
-              className="block font-medium hover:text-accent transition-colors"
+            </Link>
+            <Link 
+              to="/about" 
+              className={`block font-medium hover:text-accent transition-colors ${isActive('/about') ? 'text-accent' : ''}`}
               onClick={() => setIsOpen(false)}
             >
-              Testimonials
-            </a>
+              About
+            </Link>
             <Link 
               href="/contact" 
               className={`block font-medium hover:text-accent transition-colors ${isActive('/contact') ? 'text-accent' : ''}`}
