@@ -30,20 +30,66 @@ const Gallery = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {images.map((image, index) => (
-            <div 
-              key={index} 
-              className="relative overflow-hidden rounded-2xl shadow-lg hover-lift group h-80"
-            >
-              <img 
-                src={image.src} 
-                alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-automotive-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-          ))}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+          {/* Large feature image - spans 2 columns and 2 rows */}
+          <div className="col-span-2 row-span-2 relative overflow-hidden rounded-2xl shadow-lg hover-lift group">
+            <img 
+              src={images[0].src} 
+              alt={images[0].alt}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-automotive-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+
+          {/* Tall image - spans 1 column and 2 rows */}
+          <div className="col-span-1 row-span-2 relative overflow-hidden rounded-2xl shadow-lg hover-lift group">
+            <img 
+              src={images[1].src} 
+              alt={images[1].alt}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-automotive-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+
+          {/* Regular image */}
+          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-2xl shadow-lg hover-lift group">
+            <img 
+              src={images[2].src} 
+              alt={images[2].alt}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-automotive-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+
+          {/* Regular image */}
+          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-2xl shadow-lg hover-lift group">
+            <img 
+              src={images[3].src} 
+              alt={images[3].alt}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-automotive-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+
+          {/* Wide image - spans 2 columns */}
+          <div className="col-span-2 row-span-1 relative overflow-hidden rounded-2xl shadow-lg hover-lift group">
+            <img 
+              src={images[4].src} 
+              alt={images[4].alt}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-automotive-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+
+          {/* Regular image */}
+          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-2xl shadow-lg hover-lift group">
+            <img 
+              src={images[5].src} 
+              alt={images[5].alt}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-automotive-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
         </div>
       </div>
     </section>
