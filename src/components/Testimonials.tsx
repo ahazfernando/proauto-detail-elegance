@@ -1,59 +1,64 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Target, Users, Zap } from "lucide-react";
+import { Quote } from "lucide-react";
 
-const values = [
+const testimonials = [
   {
-    icon: Award,
-    title: "Excellence",
-    description: "We deliver world-class automotive care with meticulous attention to detail and international quality standards.",
+    name: "Michael Chen",
+    role: "Porsche 911 Owner",
+    content: "ProAuto transformed my 911. The ceramic coating and paint correction were flawless. They treat every car like it's their own masterpiece.",
+    rating: 5,
   },
   {
-    icon: Target,
-    title: "Precision",
-    description: "Every vehicle receives customized treatment using premium products and advanced techniques for optimal results.",
+    name: "Sarah Johnson",
+    role: "Tesla Model S Owner",
+    content: "Best detailing service I've ever experienced. The attention to detail is incredible, and my Tesla looks brand new again. Highly recommend!",
+    rating: 5,
   },
   {
-    icon: Users,
-    title: "Customer Focus",
-    description: "Your satisfaction drives everything we do. We build lasting relationships through exceptional service and care.",
+    name: "David Martinez",
+    role: "BMW M5 Owner",
+    content: "The team at ProAuto is exceptional. Professional, thorough, and passionate about their work. My M5 has never looked better.",
+    rating: 5,
   },
   {
-    icon: Zap,
-    title: "Innovation",
-    description: "We stay ahead with cutting-edge technology and methods to protect and enhance your vehicle's appearance.",
+    name: "Emily Williams",
+    role: "Mercedes AMG Owner",
+    content: "I trust ProAuto with my AMG completely. Their expertise in luxury vehicle care is unmatched. Worth every penny!",
+    rating: 5,
   },
 ];
 
-const AboutUs = () => {
+const Testimonials = () => {
   return (
-    <section id="about" className="py-20 bg-automotive-grey text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-automotive-black via-automotive-grey to-automotive-black opacity-90"></div>
-      
-      <div className="container px-4 md:px-6 relative z-10">
+    <section id="testimonials" className="py-20 bg-gradient-to-b from-background to-muted">
+      <div className="container px-4 md:px-6">
         <div className="text-center mb-16">
           <span className="text-accent text-sm font-semibold tracking-wider uppercase mb-4 block">
-            About Us
+            Testimonials
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Redefining Automotive Excellence
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            What Our Clients Say
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
-            ProAuto was founded with a singular mission: to provide luxury vehicle owners with world-class detailing and care services that exceed international standards. Our team of certified professionals brings together decades of experience, combining traditional craftsmanship with modern innovation.
-          </p>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            From exotic supercars to daily drivers, we treat every vehicle as a masterpiece deserving of exceptional care. Our commitment to quality, precision, and customer satisfaction has made us the trusted choice for discerning automotive enthusiasts.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Don't just take our word for it. Here's what luxury car owners say about their ProAuto experience.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-          {values.map((value, index) => (
-            <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover-lift">
-              <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/20 mb-4">
-                  <value.icon className="w-8 h-8 text-accent" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="hover-lift">
+              <CardContent className="p-6">
+                <Quote className="w-10 h-10 text-accent mb-4" />
+                <p className="text-muted-foreground mb-6">{testimonial.content}</p>
+                <div className="flex items-center gap-1 mb-3">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-accent text-lg">★</span>
+                  ))}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
-                <p className="text-gray-300">{value.description}</p>
+                <div>
+                  <h4 className="font-semibold">{testimonial.name}</h4>
+                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -63,4 +68,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Testimonials;
