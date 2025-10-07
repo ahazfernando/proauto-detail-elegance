@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +60,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        automotive: {
+          black: "hsl(var(--automotive-black))",
+          grey: "hsl(var(--automotive-grey))",
+          light: "hsl(var(--automotive-light))",
+          red: "hsl(var(--automotive-red))",
+        },
+      },
+      boxShadow: {
+        'sm': 'var(--shadow-sm)',
+        'md': 'var(--shadow-md)',
+        'lg': 'var(--shadow-lg)',
+        'red': 'var(--shadow-red)',
       },
       borderRadius: {
         lg: "var(--radius)",
