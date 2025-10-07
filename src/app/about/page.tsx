@@ -26,7 +26,7 @@ const values = [
   },
 ];
 
-const About = () => {
+export default function AboutPage() {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -69,6 +69,4 @@ const About = () => {
       <Footer />
     </div>
   );
-};
-
-export default About;
+}

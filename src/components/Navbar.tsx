@@ -36,13 +36,13 @@ const Navbar = () => {
               Services
             </Link>
             <Link 
-              to="/gallery" 
+              href="/gallery" 
               className={`font-medium hover:text-accent transition-colors ${isActive('/gallery') ? 'text-accent' : ''}`}
             >
               Gallery
             </Link>
             <Link 
-              to="/about" 
+              href="/about" 
               className={`font-medium hover:text-accent transition-colors ${isActive('/about') ? 'text-accent' : ''}`}
             >
               About
@@ -88,14 +88,14 @@ const Navbar = () => {
               Services
             </Link>
             <Link 
-              to="/gallery" 
+              href="/gallery" 
               className={`block font-medium hover:text-accent transition-colors ${isActive('/gallery') ? 'text-accent' : ''}`}
               onClick={() => setIsOpen(false)}
             >
               Gallery
             </Link>
             <Link 
-              to="/about" 
+              href="/about" 
               className={`block font-medium hover:text-accent transition-colors ${isActive('/about') ? 'text-accent' : ''}`}
               onClick={() => setIsOpen(false)}
             >

@@ -7,7 +7,7 @@ import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 
-const GalleryPage = () => {
+export default function GalleryPage() {
   const images = [
     { src: gallery1, alt: "Luxury car interior with premium leather seats" },
     { src: gallery2, alt: "Professional detailing of car paint surface" },
@@ -102,6 +102,4 @@ const GalleryPage = () => {
       <Footer />
     </div>
   );
-};
-
-export default GalleryPage;
+}
