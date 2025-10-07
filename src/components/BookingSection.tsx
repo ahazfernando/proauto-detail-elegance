@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Phone } from "lucide-react";
-import bookingProcess from "@/assets/booking-process.jpg";
 
 const BookingSection = () => {
   return (
     <section className="py-20 bg-automotive-grey relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <img 
-          src={bookingProcess} 
+          src="/booking-process.jpg" 
           alt="Professional car detailing" 
           className="w-full h-full object-cover"
         />

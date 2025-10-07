@@ -1,27 +1,24 @@
 import { Award, Heart, Package } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import serviceQuality from "@/assets/service-quality.jpg";
-import customerExperience from "@/assets/customer-experience.jpg";
-import carProducts from "@/assets/car-products.jpg";
 
 const features = [
   {
     icon: Award,
     title: "Exceptional Service Quality",
     description: "Our certified technicians deliver meticulous attention to detail using state-of-the-art equipment and proven techniques for superior results.",
-    image: serviceQuality,
+    image: "/service-quality.jpg",
   },
   {
     icon: Heart,
     title: "Top-Tier Customer Experience",
     description: "Experience luxury service with comfortable waiting areas, transparent communication, and personalized care that exceeds expectations.",
-    image: customerExperience,
+    image: "/customer-experience.jpg",
   },
   {
     icon: Package,
     title: "Premium Car Care Products",
     description: "We exclusively use professional-grade products from leading manufacturers to ensure the best protection and finish for your vehicle.",
-    image: carProducts,
+    image: "/car-products.jpg",
   },
 ];
 

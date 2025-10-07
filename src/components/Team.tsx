@@ -1,22 +1,18 @@
-import team1 from "@/assets/team-1.jpg";
-import team2 from "@/assets/team-2.jpg";
-import team3 from "@/assets/team-3.jpg";
-
 const teamMembers = [
   {
     name: "Marcus Rodriguez",
     role: "Master Detailer",
-    image: team1,
+    image: "/team-1.jpg",
   },
   {
     name: "Sarah Thompson",
     role: "Service Manager",
-    image: team2,
+    image: "/team-2.jpg",
   },
   {
     name: "David Chen",
     role: "Senior Technician",
-    image: team3,
+    image: "/team-3.jpg",
   },
 ];
 
