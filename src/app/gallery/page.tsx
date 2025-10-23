@@ -1,20 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
 
 export default function GalleryPage() {
   const images = [
-    { src: gallery1, alt: "Luxury car interior with premium leather seats" },
-    { src: gallery2, alt: "Professional detailing of car paint surface" },
-    { src: gallery3, alt: "Premium wheel cleaning service" },
-    { src: gallery4, alt: "Modern luxury car dashboard and interior" },
-    { src: gallery5, alt: "Interior vacuuming and cleaning service" },
-    { src: gallery6, alt: "Showroom quality car finish after detailing" },
+    { src: "/gallery-1.jpg", alt: "Luxury car interior with premium leather seats" },
+    { src: "/gallery-2.jpg", alt: "Professional detailing of car paint surface" },
+    { src: "/gallery-3.jpg", alt: "Premium wheel cleaning service" },
+    { src: "/gallery-4.jpg", alt: "Modern luxury car dashboard and interior" },
+    { src: "/gallery-5.jpg", alt: "Interior vacuuming and cleaning service" },
+    { src: "/gallery-6.jpg", alt: "Showroom quality car finish after detailing" },
   ];
 
   return (

@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroWheel from "@/assets/hero-wheel.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-automotive-black">
       <div className="absolute inset-0">
         <img 
-          src={heroWheel} 
+          src="/hero-wheel.jpg" 
           alt="Luxury car wheel with premium detailing" 
           className="w-full h-full object-cover opacity-40"
         />
