@@ -11,7 +11,7 @@ const values = [
   },
   {
     icon: Target,
-    title: "Precision",
+    title: "Precise",
     description: "Every vehicle receives customized treatment using premium products and advanced techniques for optimal results.",
   },
   {
